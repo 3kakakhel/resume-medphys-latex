@@ -1,7 +1,5 @@
 % LaTeX resume using res.cls
 \documentclass[margin]{res}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font 
 \setlength{\sectionwidth}{1.5in} % set width of section portion
 \setlength{\resumewidth}{7.1in}  % set width of resume portion
 \usepackage{enumitem}
@@ -11,6 +9,8 @@
 %\usepackage{dejavu}
 %\usepackage[default]{sourcesanspro}
 %\usepackage{helvet}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[T1]{fontenc}
 
@@ -29,7 +29,7 @@
 \vskip-0.15in
 2104 \ \ \  59th \ \ \  Ave \ \ \  Ct \qquad\qquad\ \ \ alikakakhel@yahoo.com \\
 Greeley, \ \  CO \ \  80634 \qquad\qquad\qquad\qquad\qquad(970) 396-5137
-
+\vskip-0.15in
 \begin{resume}
  
 %\section{OBJECTIVE}  A position in the field of computers with special 
@@ -49,82 +49,57 @@ Minor: Mathematics
 {\sl Medical Physics Volunteer} \hfill May 2013 -- Present \\
 North Colorado Medical Center, Greeley, CO
  \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Commissioning TrueBeam for Pinnacle
-    \item Tabulating beam data for TrueBeam
-    \item HDR source swapping and daily quality assurance
-    \item Assisting with OBI, linac, and patient specific delivery quality assurance
-    \item Implementing a system to quantify and improve treatment plan quality
-    \item Testing protocol for VisionRT gated simulation and treatment
-    \item Molding electron cone cutouts
-    \item 3D printing bolus and patient structures
+    \item Tabulated beam data for TrueBeam
+    \item Assisted with commissioning TrueBeam for Pinnacle
+    \item Assisted with Varian GammaMed HDR source swapping and daily QA
+    \item Assisted with linac and OBI monthly, annual QA for TrueBeam, Clinac 2100EX
+    \item Assisted with radiation survey, risk assesment, and vault shielding calculations
+    \item Assisted with patient specific delivery QA using MapCheck, ArcCheck, 3DVH
+    \item Assisted with OSLD measurements for third party calibration
+    \item Implemented a system to quantify and improve treatment plan quality
+    \item 3D printed bolus and patient structures using MakerBot and Objet
+    \item Molded electron cone cutouts
 \end{itemize}
 
 {\sl Medical Physics Volunteer} \hfill Apr 2010 -- Apr 2011 \\
 Karmanos Cancer Center, Detroit, MI
  \begin{itemize}  \itemsep -2pt %reduce space between items
     \item Observing and assisting with Gammaknife SRS treatments
-    \item Commissioning new Teflon phantom for Eclipse
+    \item Commissioning new Teflon phantom in Eclipse for SBRT treatments
     \item Treatment planning: IMRT, SBRT, RapidArc, Tomotherapy
+    \item Became familiar with Varian Trilogy iX linac
+    \item Tomotherapy linac quality assurance
 \end{itemize}
 
 {\sl Tomotherapy QA Intern} \hfill         Feb 2010 -- Apr 2010 \\
 Karmanos Cancer Center, Detroit, MI
  \begin{itemize}  \itemsep -2pt %reduce space between items
-    \item Became familiar with Tomotherapy linac, software, and Cheese phantom
-    \item Performed bi-weekly patient specific delivery quality assurance
+    \item Became familiar with Tomotherapy Hi-ART II linac and planning software
+    \item Performed bi-weekly patient specific delivery QA using cheese phantom
  \end{itemize} 
 {\sl IMRT QA Intern} \hfill                Dec 2009 -- Feb 2010 \\
 Karmanos Cancer Center, Detroit, MI
-  \begin{itemize}
-    \item Became familiar with Mapcheck diode array and the PTW 729 ion \\ chamber array with Octavius phantom
-    \item Performed bi-weekly patient specific delivery quality assurance
+  \begin{itemize}  \itemsep -2pt %reduce space between items
+    \item Became familiar with Clinac 2100EX linac
+    \item Performed bi-weekly patient specific delivery QA using PTW 729 ion \\ chamber array with Octavius phantom
     \item Evaluated measurement results using VeriSoft verification software
    \end{itemize} 
 
 \section{Certification} American Board of Radiology Therapetic Medical Physics Part 1
-
-\section{Procedures}
-\begin{itemize}[noitemsep]
-    \item HDR source swapping and daily quality assurance
-    \item Patient specific delivery quality assurance
-    \item Monthly, annual linac quality assurance
-    \item Tomotherapy quality assurance
-    \item OBI quality assurance
-    \item TrueBeam commissioning
-    \item New phantom commissioning
-    \item Radiation survey and risk assessment
-    \item Radiation therapy vault shielding calculations
-    \item Treatment planning: IMRT, SBRT, RapidArc, \\ Tomotherapy
-    \item Electon cone cutout molding
-    \item 3D printing bolus and patient structures
-\end{itemize}
-
-\section{Equipment}
-\begin{itemize}[noitemsep]
-    \item Varian TrueBeam, Trilogy IX, Clinac 2100 EX
-    \item Varian GammaMed HDR Afterloader
-    \item TomoTherapy Hi-ART II
-    \item GammaKnife SRS
-    \item 3D Scanning Water Tank
-    \item MapCheck, ArcCheck, PTW 729
-    \item Cheese, Octavius, Lucy Phantoms
-    \item Ion Chamber, Film, Diode, TLD/OSLD
-    \item MakerBot Replicator 2X
-\end{itemize}
-
-\section{Software}
-\begin{itemize}[noitemsep]
-    \item Eclipse, Tomotherapy, Mosaiq, Pinnacle
-    \item RIT, DoseLab, VeriSoft, MapCheck, RadCalc, 3DVH, Quality Reports, OmniPro
-    \item Matlab/Octave, R, Python, C/C++, LaTeX, XML
-    \item 3DSlicer, Blender, Meshlab, Slic3r
-\end{itemize}
 
 \section{Research}
 \begin{itemize} \itemsep -2pt % Reduce space between items
     \item Lack, D., Kakakhel, A., Starin, R., \& Snyder, M. (2014). \textit{Teflon Cylindrical Phantom for Delivery Quality Assurance of Stereotactic Body Radiotherapy (SBRT)}. Journal Of Applied Clinical Medical Physics, 15(1). \\ doi:10.1120/jacmp.v15i1.4536
     \item Kakakhel, A., Snyder, M., Lack, D. (2011). \textit{Applicability of Image Smoothing for Dose Calculation of High Density Phantoms in Patient Specific Delivery Quality Assurance}. Poster session presented at 2011 Joint AAPM/COMP Meeting, Vancouver, BC, Canada. \\ http://www.aapm.org/meetings/2011AM/PRAbs.asp?aid=15361
     \item Kakakhel, A. 2011. \textit{Commissioning a Cylindrical Teflon Phantom for Delivery Quality Assurance of SBRT Cases} (Master's Thesis). Wayne State University, Detroit, MI.
+\end{itemize}
+
+\section{Software}
+\begin{itemize}[noitemsep]
+    \item Mosaiq, Pinnacle, Eclipse, Tomotherapy
+    \item RIT, DoseLab, VeriSoft, MapCheck, RadCalc, 3DVH, Quality Reports, OmniPro
+    \item Matlab/Octave, R, Python, C/C++, LaTeX, HTML, XML
+    \item 3DSlicer, Blender, Meshlab, Slic3r
 \end{itemize}
  
 % \section{Honors}
