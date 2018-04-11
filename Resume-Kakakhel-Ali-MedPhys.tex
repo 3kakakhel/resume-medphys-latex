@@ -1,237 +1,193 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Long Professional Curriculum Vitae
-% LaTeX Template
-% Version 1.1 (9/12/12)
+% resume.tex
 %
-% This template has been downloaded from:
-% http://www.latextemplates.com
-%
-% Original author:
-% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
-%
-% Important note:
-% This template requires the res.cls file to be in the same directory as the
-% .tex file. The res.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2009-2012 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+% GENERAL NOTE:  There may be some notes specific to myself.  If you're only interested in my LaTeX source or it doesn't make sense, please disregard it.
 
-\documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\documentclass[letterpaper,10pt]{article}
 
-\usepackage{helvet} % Default font is the helvetica postscript font
-%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black 
+    %urlcolor=mygreylink     % can put red here to better visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.93}
+\definecolor{mygreylink}{gray}{.40}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
 
-\newsectionwidth{0pt} % Stops section indenting
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\ressubsubheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+%-----------------------------------------------------------
+%General Resume Tips
+%   No periods!  Technically, nothing in this document is a full sentence.
+%   Use parallelism by ending key words with the same thing,  i.e. "Coordinated; Designed; Communicated".
+%   More tips on bottom of this LaTeX document.
+%-----------------------------------------------------------
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	YOUR NAME AND ADDRESS(ES) SECTION
-%----------------------------------------------------------------------------------------
-\voffset-0.5in
-\name{Ali Kakakhel\\ \\} % Your name at the top
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{\LARGE Ali Kakakhel} & alikakakhel@yahoo.com\\
+	{\footnotesize \colorbox{white}{2104 \ \  59th \ \  Ave \ \  Ct, \ \  Greeley, CO \ \  80634}} & (970) 396-5137 \\
+	\end{tabular*}
+\\
+\vspace{0.1in}}
 
-% If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
+% CHANGE HEADER SOURCE HERE
+\mywebheader
 
-\address{2104 \ \ \  59th \ \ \  Ave \ \ \  Ct \\ Greeley, \ \ \  CO \ \ \  80634} % Your address 1
-\address{alikakakhel@yahoo.com  \\ (970) 396-5137} % Your address 2
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Education}
+	\begin{itemize}
+		\item
+			\ressubheading{Wayne State University}{Detroit, MI}{Masters of Science in Radiological Physics; GPA:3.43}{Sept 2008 -- May 2012}
+		\item
+			\ressubheading{Colorado State University}{Fort Collins, CO}{Bachelors of Science in Physics; GPA:3.78}{Aug 2004 -- May 2008}
+				{ \footnotesize
+				\begin{itemize}
+					\resitem{Minor Mathematics}
+				\end{itemize}
+				}	
+	\end{itemize} % End Education list
 
-%----------------------------------------------------------------------------------------
-
-\begin{resume}
-
-%----------------------------------------------------------------------------------------
-%	OBJECTIVE SECTION
-%----------------------------------------------------------------------------------------
-
-% \section{\centerline{OBJECTIVE}}
-
-% \vspace{8pt} % Gap between title and text
-
-% A position in Personnel Administration utilizing skills in recruiting, training and compensation.\\ 
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{EDUCATION}} 
-
-\vspace{8pt} % Gap between title and text
-
-{\sl Master of Science}, 
-Radiological Physics \\ 
-Wayne State University, Detroit, NI \hfill May 2012 \\ 
-THESIS - Commissioning a Cylindrical Teflon Phantom for Delivery Quality Assurance of SBRT Cases \\
-GPA 3.43 
- 
-{\sl Bachelor of Science}, Physics \\ 
-Colorado State University, Fort Collins, CO \hfill May 2008 \\
-GPA 3.78
-
-{\sl Minor of Mathematics}, Colorado State University, Fort Collins, CO \hfill May 2008
-
-%----------------------------------------------------------------------------------------
- 
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%   CERTIFICATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{CERTIFICATION}}
-
-\vspace{8pt} % Gap between title and text
-
-American Board of Radiology Therapetic Medical Physics Part 1 
-
-%----------------------------------------------------------------------------------------
-
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%	PROFESSIONAL EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{PROFESSIONAL EXPERIENCE}} 
-
-\vspace{8pt} % Gap between title and text
-
-{\sl North Colorado Medical Center} \hfill May 2013 -- Present \\
-Greeley, CO \hfill (Medical Physics Volunteer)
-\begin{itemize} \itemsep -2pt % Reduce space between items
-    \item Commissioning TrueBeam for Pinnacle
-    \item Tabulating beam data for TrueBeam
-    \item HDR source swapping and daily quality assurance
-    \item Assisting with OBI, linac, and patient specific delivery quality assurance
-    \item Implementing a system to quantify and improve treatment plan quality
-    \item Testing protocol for VisionRT gated simulation and treatment
-    \item Molding electron cone cutouts
-    \item 3D printing bolus and patient structures
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Certification}
+\begin{itemize}
+	\item American Board of Radiology Therapetic Medical Physics Part 1
 \end{itemize}
 
-{\sl Karmanos Cancer Center, Detroit, MI} \\[2pt]
-Tomotherapy QA Intern \hfill Feb 2010 -- Apr 2010 
-\begin{itemize} \itemsep -2pt % Reduce space between items
-    \item Became familiar with Tomotherapy linac, software, and Cheese phantom
-    \item Performed bi-weekly patient specific delivery quality assurance
-    \item Observe and assist with Gammaknife SRS treatments
-\end{itemize} 
-\vspace{-6pt} % Reduce space between positions at the same organization
-IMRT QA Intern \hfill Dec 2009 -- Feb 2010 
-\begin{itemize} 
-    \item Became familiar with Mapcheck diode array and the PTW 729 ion chamber array with Octavius phantom
-    \item Performed bi-weekly patient specific delivery quality assurance
-    \item Evaluated measurement results using VeriSoft verification software
-\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Experience}
+	\begin{itemize}
+		\item 
+			\ressubheading{North Colorado Medical Center}{Greeley, CO}
+				{Medical Physics Volunteer}{May 2013 -- Present}
+				{ \footnotesize
+				\begin{itemize}
+    				\resitem Commissioning TrueBeam for Pinnacle
+    				\resitem Tabulating beam data for TrueBeam
+    				\resitem HDR source swapping and daily quality assurance
+    				\resitem Assisting with OBI, linac, and patient specific delivery quality assurance
+    				\resitem Implementing a system to quantify and improve treatment plann quality
+    				\resitem Observing and assisting with OBI, linac, and patient specific delivery quality assurance
+    				\resitem Testing protocol for VisionRT gated simulation and treatment
+    				\resitem Molding electron cone cutouts
+    				\resitem 3D printing bolus and patient structures
+				\end{itemize}
+				}
+		\item
+			\ressubheading{Karmanos Cancer Center}{Detroit, MI}{Tomotherapy QA Intern}{Feb 2010 -- Apr 2010}
+				{ \footnotesize
+				\begin{itemize}
+    				\resitem Became familiar with Tomotherapy linac, software, and Cheese phantom
+    				\resitem Performed bi-weekly patient specific delivery quality assurance
+    				\resitem Observe and assist with Gammaknife SRS treatments
+				\end{itemize}
+				}
+			\ressubsubheading{IMRT QA Intern}{Dec 2009 -- Feb 2010}
+				{ \footnotesize
+				\begin{itemize}
+    				\resitem Became familiar with Mapcheck diode array and the PTW 729 ion chamber array with Octavius phantom
+    				\resitem Performed bi-weekly patient specific delivery quality assurance
+    				\resitem Evaluated measurement results using VeriSoft verification software
+				\end{itemize}
+				}
+	\end{itemize}  % End Experience list
 
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Procedures}
+	\begin{itemize}[noitemsep]
+	    \item {\footnotesize HDR source swapping and daily quality assurance}
+	    \item {\footnotesize Patient specific delivery quality assurance}
+	    \item {\footnotesize Monthly, annual linac quality assurance}
+	    \item {\footnotesize Tomotherapy quality assurance}
+	    \item {\footnotesize OBI quality assurance}
+	    \item {\footnotesize TrueBeam commissioning}
+	    \item {\footnotesize New phantom commissioning}
+	    \item {\footnotesize Radiation survey and risk assessment}
+	    \item {\footnotesize Radiation therapy vault shielding calculations}
+	    \item {\footnotesize Treatment planning: IMRT, SBRT, RapidArc, Tomotherapy}
+	    \item {\footnotesize Electon cone cutout molding}
+	    \item {\footnotesize 3D printing bolus and patient structures}
+	\end{itemize}  % End Procedures list
 
-\vspace{0.2in} % Some whitespace between sections
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Equipment}
+	\begin{itemize}[noitemsep]
+	    \item {\footnotesize Varian TrueBeam, Trilogy IX, Clinac 2100 EX}
+	    \item {\footnotesize Varian GammaMed HDR Afterloader}
+	    \item {\footnotesize TomoTherapy Hi-ART II}
+	    \item {\footnotesize GammaKnife SRS}
+	    \item {\footnotesize 3D Scanning Water Tank}
+	    \item {\footnotesize MapCheck, ArcCheck, PTW 729}
+	    \item {\footnotesize Cheese, Octavius, Lucy Phantoms}
+	    \item {\footnotesize Ion Chamber, Film, Diode, TLD/OSLD}
+	    \item {\footnotesize MakerBot Replicator 2X}
+	\end{itemize}  % End Equipment list
 
-%----------------------------------------------------------------------------------------
-%	PROCEDURES SECTION
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Software}
+	\begin{itemize}[noitemsep]
+	    \item {\footnotesize Eclipse, Tomotherapy, Mosaiq, Pinnacle}
+	    \item {\footnotesize RIT, DoseLab, VeriSoft, MapCheck, RadCalc, 3DVH, Quality Reports, OmniPro}
+	    \item {\footnotesize Matlab/Octave, R, Python, C/C++, LaTeX, XML}
+	    \item {\footnotesize 3DSlicer, Blender, Meshlab, Slic3r}
+	\end{itemize}  % End Software list
 
-\section{\centerline{PROCEDURES}} 
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Research}
+	\begin{itemize} \itemsep -2pt % Reduce space between items
+	    \item {\footnotesize Lack, D., Kakakhel, A., Starin, R., \& Snyder, M. (2014). \textit{Teflon Cylindrical Phantom for Delivery Quality Assurance of Stereotactic Body Radiotherapy (SBRT)}. Journal Of Applied Clinical Medical Physics, 15(1). doi:10.1120/jacmp.v15i1.4536}
+	    \item {\footnotesize Kakakhel, A., Snyder, M., Lack, D. (2011). \textit{Applicability of Image Smoothing for Dose Calculation of High Density Phantoms in Patient Specific Delivery Quality Assurance}. Poster session presented at 2011 Joint AAPM/COMP Meeting, Vancouver, BC, Canada. http://www.aapm.org/meetings/2011AM/PRAbs.asp?aid=15361}
+	    \item {\footnotesize Kakakhel, A. 2011. \textit{Commissioning a Cylindrical Teflon Phantom for Delivery Quality Assurance of SBRT Cases} (Master's Thesis). Wayne State University, Detroit, MI.}
+	\end{itemize}
 
-\vspace{15pt} % Gap between title and text
-\begin{itemize} \itemsep -2pt % Reduce space between items
-    \item HDR source swapping and daily quality assurance
-    \item Patient specific delivery quality assurance
-    \item Monthly, annual linac quality assurance
-    \item Tomotherapy quality assurance
-    \item OBI quality assurance
-    \item TrueBeam commissioning
-    \item New phantom commissioning
-    \item Radiation survey and risk assessment
-    \item Radiation therapy vault shielding calculations
-    \item Treatment planning: IMRT, SBRT, RapidArc, Tomotherapy
-    \item Electon cone cutout molding
-    \item 3D printing bolus and patient structures
-\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%
+% \resheading{Honors}
+% 	\begin{description}
+% 		{\footnotesize \item[2007 -- 2008] {Society of Physics Students Vice-President}}
+% 		{\footnotesize \item[2007] {Induction to Sigma Pi Sigma Physics Honor Society}}
+% 		{\footnotesize \item[2006 -- 2007]{Dean's List}}
+% 	\end{description} % End Honors list
 
-%----------------------------------------------------------------------------------------
-
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%   EQUIPMENT SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{EQUIPMENT}} 
-
-\vspace{15pt} % Gap between title and text
-\begin{itemize} \itemsep -2pt % Reduce space between items
-    \item Varian TrueBeam, Trilogy IX, Clinac 2100 EX
-    \item Varian GammaMed HDR Afterloader
-    \item TomoTherapy Hi-ART II
-    \item GammaKnife SRS
-    \item 3D Scanning Water Tank
-    \item MapCheck, ArcCheck, PTW 729
-    \item Cheese, Octavius, Lucy Phantoms
-    \item Ion Chamber, Film, Diode, TLD/OSLD
-    \item MakerBot Replicator 2X
-\end{itemize}
-
-%----------------------------------------------------------------------------------------
-
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%   SOFTWARE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{SOFTWARE}} 
-
-\vspace{15pt} % Gap between title and text
-\begin{itemize} \itemsep -2pt % Reduce space between items
-    \item Eclipse, Tomotherapy, Mosaiq, Pinnacle
-    \item RIT, DoseLab, VeriSoft, MapCheck, RadCalc, 3DVH, Quality Reports, OmniPro
-    \item Matlab/Octave, R, Python, C/C++, LaTeX, XML
-    \item 3DSlicer, Blender, Meshlab, Slic3r
-\end{itemize}
-
-%----------------------------------------------------------------------------------------
-
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%   RESEARCH SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{RESEARCH}} 
-
-\vspace{15pt} % Gap between title and text
-\begin{itemize} \itemsep -2pt % Reduce space between items
-    \item Lack, D., Kakakhel, A., Starin, R., \& Snyder, M. (2014). \textit{Teflon Cylindrical Phantom for Delivery Quality Assurance of Stereotactic Body Radiotherapy (SBRT)}. Journal Of Applied Clinical Medical Physics, 15(1). doi:10.1120/jacmp.v15i1.4536
-    \item Kakakhel, A., Snyder, M., Lack, D. (2011). \textit{Applicability of Image Smoothing for Dose Calculation of High Density Phantoms in Patient Specific Delivery Quality Assurance}. Poster session presented at 2011 Joint AAPM/COMP Meeting, Vancouver, BC, Canada. http://www.aapm.org/meetings/2011AM/\\PRAbs.asp?aid=15361
-    \item Kakakhel, A. 2011. \textit{Commissioning a Cylindrical Teflon Phantom for Delivery Quality Assurance of SBRT Cases} (Master's Thesis). Wayne State University, Detroit, MI.
-\end{itemize}
-
-%----------------------------------------------------------------------------------------
-
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%	HONORS SECTION
-%----------------------------------------------------------------------------------------
-
-% \section{\centerline{HONORS}} 
-
-% \vspace{-5pt} % Reduce space between section title and contents
-
-% \begin{center}
-% Society of Physics Students Vice-President \\
-% Induction to Sigma Pi Sigma Physics Honor Society \\
-% Dean's List 2006 -- 2007
-% \end{center}
-
-%----------------------------------------------------------------------------------------
-
-
-\end{resume} 
 \end{document}
