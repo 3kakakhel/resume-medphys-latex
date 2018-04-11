@@ -1,134 +1,177 @@
-\documentclass{tccv-grey}
-\usepackage[english]{babel}
-\usepackage{lipsum}
+\documentclass[10pt]{article}
+\usepackage[margin=1cm]{geometry}
 \usepackage{enumitem}
-\setlist{nolistsep}
-
-\usepackage[scaled]{berasans}
-%\usepackage{DejaVuSans}
-%\usepackage{DejaVuSansCondensed}
-%\usepackage{dejavu}
-%\usepackage[default]{sourcesanspro}
-%\usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
+\usepackage[scaled=1]{berasans}
 \usepackage[T1]{fontenc}
+% \usepackage{font spec}
+\usepackage{fontawesome}
+\usepackage{multirow}
+% \usepackage{color}
+
+\pagenumbering{gobble}
+\renewcommand{\labelitemi}{$-$}
+% \definecolor{midgray}{gray}{0.25}
 
 \begin{document}
-\small
-\part{Ali Kakakhel}
 
-\section{Professional Experience}
-\begin{eventlist}
-    \item{May 2013 -- Present}
-         {North Colorado Medical Center}
-         {Medical Physics Volunteer}
-\end{eventlist}
-\vspace{-\topsep}
-\begin{itemize}[noitemsep]
-    \item Commissioning TrueBeam for Pinnacle
-    \item Tabulating beam data for TrueBeam
-    \item HDR source swapping and daily quality assurance
-    \item Assisting with OBI, linac, and patient specific delivery quality assurance
-    \item Implementing a system to quantify and improve treatment plan quality
-    \item Testing protocol for VisionRT gated simulation and treatment
-    \item Molding electron cone cutouts
-    \item 3D printing bolus and patient structures\\
-\end{itemize}
+%
+% Header
+%
+\hspace{-.8cm}
+\begin{tabular}{lr}
+\multirow{2}{15.2cm}{\Huge\bfseries Ali Kakakhel}               & 970-396-5137                    \\
+                                                                & 3kakakhel@gmail.com             \\
+                                                                & 2104\ \ \ 59th\ \ \ Ave\ \ \ Ct \\
+Medical Physics, 3D Printing, Data Analytics, Programming       & Greeley,\ \ \ CO\ \ \ 80534     \\
+% \hline
+\end{tabular}
+\rule{196mm}{0.5pt}
+% {\color{midgray}\rule{196mm}{0.5pt}}
 
-\begin{eventlist}
-    \item{Feb 2010 -- Apr 2010}
-         {Karmanos Cancer Center}
-         {Tomotherapy QA Intern}
-\end{eventlist}
-\vspace{-\topsep}
-\begin{itemize}[noitemsep]
-    \item Became familiar with Tomotherapy linac, software, and Cheese phantom
-    \item Performed bi-weekly patient specific delivery quality assurance
-    \item Observe and assist with Gammaknife SRS treatments\\
-\end{itemize}
+%
+% Body
+%
+\begin{description}[leftmargin=!,labelwidth=3cm,align=left,itemsep=-9px,partopsep=-5px]
 
-\begin{eventlist}
-    \item{Dec 2009 -- Feb 2010}
-         {Karmanos Cancer Center}
-         {IMRT QA Intern}
-\end{eventlist}
-\vspace{-\topsep}
-\begin{itemize}[noitemsep]
-    \item Became familiar with Mapcheck diode array and the PTW 729 ion chamber array with Octavius phantom
-    \item Performed bi-weekly patient specific delivery quality assurance
-    \item Evaluated measurement results using VeriSoft verification software
-\end{itemize}
+%
+% Objective
+%
+% \item[Objective]
+%     An staff accountant position at LiLAC Group in Denver, CO.
+% \item[\rule{196mm}{0.5pt}]
 
-\section{Research}
-\begin{itemize} \itemsep -2pt % Reduce space between items
-    \item Lack, D., Kakakhel, A., Starin, R., \& Snyder, M. (2014). \textit{Teflon Cylindrical Phantom for Delivery Quality Assurance of Stereotactic Body Radiotherapy (SBRT)}. Journal Of Applied Clinical Medical Physics, 15(1). doi:10.1120/jacmp.v15i1.4536
-    \item Kakakhel, A., Snyder, M., Lack, D. (2011). \textit{Applicability of Image Smoothing for Dose Calculation of High Density Phantoms in Patient Specific Delivery Quality Assurance}. Poster session presented at 2011 Joint AAPM/COMP Meeting, Vancouver, BC, Canada. http://www.aapm.org/ \\ meetings/2011AM/PRAbs.asp?aid=15361
-    \item Kakakhel, A. 2011. \textit{Commissioning a Cylindrical Teflon Phantom for Delivery Quality Assurance of SBRT Cases} (Master's Thesis). Wayne State University, Detroit, MI.
-\end{itemize}
+%
+% Education
+%
+\item[Education]
+    \textit{Master's of Accounting} \hfill Dec 2017\\
+    University of Northern Colorado, GPA: 3.67
+    \begin{itemize}[rightmargin=2cm,noitemsep]%,topsep=-3px]
+        \item Team developed accounting information system for client
+        \item Team completed entire mock audit 33\% more efficiently
+        \item Team placed 2nd mock forensics case
+        % \item Completed partnership tax return
+    \end{itemize}
 
-% \section{Honors}
-% \begin{factlist}
-%     \item{2007 -- 2008}{Society of Physics Students Vice-President}
-%     \item{2007}{Induction to Sigma Pi Sigma Physics Honor Society}
-%     \item{2006 -- 2007}{Dean's List}
-% \end{factlist}
+    \textit{Bachelor's of Business Administration, Accounting} \hfill Dec 2016\\
+    University of Northern Colorado, Accounting GPA: 3.70 \quad Overall GPA: 3.70
 
+    \textit{Master's of Science, Radiological Physics} \hfill May 2012\\
+    Wayne State University, GPA: 3.43
 
-\personal
-    %[www.entidi.com]
-    {2104 \ \ \  59th \ \ \  Ave \ \  Ct \newline Greeley, \ \ \  CO \ \ \  80634}
-    {(970) 396-5137}
-    {alikakakhel@yahoo.com}
+    \textit{Bachelor's of Science, Physics} \hfill May 2008\\
+    Colorado State University, GPA: 3.79
+\item[\rule{196mm}{0.5pt}]
 
-\section{Education}
-\begin{yearlist}
-    \item[Wayne State University]{2012}
-         {M.S. Radiological Phyiscs}
-         {CAMPEP Accredited}
-    \item[Colorado State University]{2008}
-         {B.S. Physics}
-         {Minor Mathematics}
-\end{yearlist}
+%
+% Experience
+%
+\item[Experience]
+    \textit{Radiation Oncology Physicist} \hfill May 2017 -- Present\\
+    McKee Medical Center
+    \begin{itemize}[rightmargin=2cm,noitemsep]%,topsep=-3px]
+        \item Checked 10-20 patient treatment charts weekly
+        \item Performed monthly, quarterly, annual linac QA
+        \item Provided needed flexibility at busiest times
+        % \item Developed visualization for treatment plan quality measures
+        % \item Developed program to process data into quality measures
+        % \item Tracked treatment timelines, wait times, via dashboard
+        % \item Investigated process for 3D printing patient specific compensators
+        % \item Prepared data tables used by dosimetrists in treatment planning
+    \end{itemize}
 
-\section{Certification}
-American Board of Radiology\\
-Therapetic Medical Physics Part 1
+    \textit{Data Analyst Intern} \hfill June 2016 -- July 2016\\
+    North Colorado Medical Center
+    \begin{itemize}[rightmargin=2cm,noitemsep]%,topsep=-3px]
+        \item Worked with client face-to-face
+        \item Developed dashboard to display and filter treatment plan quality results
+        \item Integrated treatment plan processing program with database
+    \end{itemize}
 
-\section{Procedures}
-\begin{itemize}[noitemsep]
-    \item HDR source swapping and daily quality assurance
-    \item Patient specific delivery quality assurance
-    \item Monthly, annual linac quality assurance
-    \item Tomotherapy quality assurance
-    \item OBI quality assurance
-    \item TrueBeam commissioning
-    \item New phantom commissioning
-    \item Radiation survey and risk assessment
-    \item Radiation therapy vault shielding calculations
-    \item Treatment planning: IMRT, SBRT, RapidArc, \\ Tomotherapy
-    \item Electon cone cutout molding
-    \item 3D printing bolus and patient structures
-\end{itemize}
+    \textit{Data Entry Volunteer} \hfill May 2013 -- May 2017\\
+    North Colorado Medical Center
+    \begin{itemize}[rightmargin=2cm,noitemsep]%,topsep=-3px]
+        \item Assisted in commissioning of new TrueBeam radiotherapy machine
+        \item Designed visualization for treatment plan quality measures
+        \item Developed program to process data into quality measures
+        \item Tracked treatment timelines, wait times, via dashboard
+        \item Investigated process for 3D printing patient specific compensators
+        \item Prepared data tables used by dosimetrists in treatment planning
+    \end{itemize}
 
-\section{Equipment}
-\begin{itemize}[noitemsep]
-    \item Varian TrueBeam, Trilogy IX, Clinac 2100 EX
-    \item Varian GammaMed HDR Afterloader
-    \item TomoTherapy Hi-ART II
-    \item GammaKnife SRS
-    \item 3D Scanning Water Tank
-    \item MapCheck, ArcCheck, PTW 729
-    \item Cheese, Octavius, Lucy Phantoms
-    \item Ion Chamber, Film, Diode, TLD/OSLD
-    \item MakerBot Replicator 2X
-\end{itemize}
+    \textit{Professional Tutor: Accounting, STEM} \hfill Jan 2013 -- Present\\
+    Aims Community College
+    \begin{itemize}[rightmargin=2cm,noitemsep]%,topsep=-3px]
+        \item Physics, Math, Chemistry, Statistics, Accounting, Business, Economics
+        \item Tutored with individual and group sessions
+    \end{itemize}
+\item[\rule{196mm}{0.5pt}]
+%
+% Leadership
+%
+\item[Leadership]
+    Beta Alpha Psi (BAP)\ \ Treasurer \hfill 2017
+    \begin{itemize}[rightmargin=2cm,noitemsep]%,topsep=-3px]
+        \item Automated financial statement generation in Excel
+        \item Streamlined Excel and paper financial records
+    \end{itemize}
+    % Beta Alpha Psi (BAP)\ \ Community Service Officer \hfill 2016
+    % \begin{itemize}[rightmargin=2cm,noitemsep]%,topsep=-3px]
+    %     \item Outreached with local volunteer organizations to add more events
+    %     \item Liaised with local volunteer organizations to help with events
+    % \end{itemize}
+    Society of Physics Students\ \ Vice-President \hfill Fall 2007
+\item[\rule{196mm}{0.5pt}]
 
-\section{Software}
-\begin{itemize}[noitemsep]
-    \item Eclipse, Tomotherapy, Mosaiq, Pinnacle
-    \item RIT, DoseLab, VeriSoft, MapCheck, RadCalc, 3DVH, Quality Reports, OmniPro
-    \item Matlab/Octave, R, Python, C/C++, LaTeX, XML
-    \item 3DSlicer, Blender, Meshlab, Slic3r
-\end{itemize}
+%
+% Volunteering
+%
+\item[Volunteering]
+	TCR Soup Supper Fundraiser \hfill 2017\\
+	% VITA Volunteer             \hfill 2016\\
+	Cattle Barron's Ball \hfill 2015, 2016, 2017\\
+	Weld Food Bank Gala  \hfill 2015, 2016, 2017\\
+	Bear Pantry	         \hfill       2016, 2017
+	% Medical Physics Volunteer \hfill 2013 -- 2017
+\item[\rule{196mm}{0.5pt}]
+
+%
+% Awards
+%
+\item[Awards]
+    US President's Volunteer Service Award \hfill 2016\\
+    BAP\ \ Community Service Award \hfill 2015, 2016
+\item[\rule{196mm}{0.5pt}]
+
+%
+% Tools
+% Languages
+%
+\item[Tools]
+    Mosaiq\ \ \ Pinnacle\ \ \ DoseLabPro\ \ \ Excel\ \ \ Matlab\ \ \ PostgreSQL\ \ \ SQLite\ \ \ Tableau\ \ \ D3.js\\
+
+% \item[Languages]
+%     ACL\ \ \ C/C++\ \ \ HTML\ \ \ JavaScript\ \ \ JSON\ \ \ LaTeX\ \ \ Python\ \ \ R\ \ \ SQL\ \ \ XBRL\ \ \ XML
+
+% \item[Productivity]
+% Microsoft Office, LibreOffice\\
+% Ledger, Beancount (open source plain text accounting)\\
+% OpenERP (open source ERP software)\\
+% LaTeX (open source professional publishing software)
+
+% \item[References]\ \\\ \\
+% % \hskip-\labelwidth
+% \vskip-7.5mm
+% \hskip-2mm
+% \begin{tabular}{lll}
+% Nike Rovero         & Alex Markovic            & Jon Baldwin             \\
+% Tutoring Supervisor & Intership Supervisor     & Volunteering Supervisor \\
+% (970) 339-6283      & (970) 396-2201           & (970) 392-6692          \\
+% veronica.rovero     & alexander.markovic       & jonathan.baldwin        \\
+% @aims.edu           & @bannerhealth.com        & @bannerhealth.com       
+% \end{tabular}
+
+\end{description}
 
 \end{document}
